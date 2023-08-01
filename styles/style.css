@@ -1,0 +1,101 @@
+.logo {
+    width: 250px;
+    cursor: pointer;
+}
+
+.topnav {
+    display: flex;
+    justify-content: flex-end;
+    /* Coloca el menú a la derecha */
+    overflow: hidden;
+    background-color: #c01f1f;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+.imglogo{
+position: absolute;
+width: 80px;
+height: 55px;
+margin-left: 20px;
+}
+
+.lnr {
+    font-size: 30px;
+    margin-right: 10px;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 15px; }
+
+    .menus:hover img {
+        transform: scale(1.1, 1.1); }
+      
+      .menu-img {
+        overflow: hidden;
+        height: 80px;
+        width: 80px; }
+        .menu-img  {
+          transition: all .5s ease;
+          height: 100%;
+          object-fit: cover; }
+      
+      
+      
+      .menus {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px dashed #ccc; }
+        .menus p, .menus h3 {
+          margin-bottom: 0; }
+        .menus .text-wrap {
+          width: calc(100% - 95px);
+          margin-left: 15px; }
+          .menus .text-wrap h4 {
+            font-weight: 300; }
+
+            .contact{
+                display: flex;
+                justify-content: center;
+                background-color: #c01f1f;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: white;
+            }
+/* Iconos de redes sociales */
+.fa-facebook-f{
+  margin-left: 20px;
+  color: red;
+  }
+.fa-twitter{
+  color: red;
+}  
+.fa-instagram{
+  color: red;
+}
+
+.hour{
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top{
+  width: 200px !important;
+  height: 200px;
+}
