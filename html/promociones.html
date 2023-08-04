@@ -4,55 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promociones</title>
-    <link href="../styles/style.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     
+<!-- BS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
+    
      <!-- CABECERA -->
-     <header> 
-   
-      <img  class="imglogo" src="../img/logo.jpeg" alt="Logo de RFS">
-              <div class="topnav">
-                <a href="../index.html">Inicio</a>
-                <a class="active" href="promociones.html">Promociones</a>
-                <a href="menu.html">Menu</a>
-                <a href="sobre-nosotros.html"">Sobre Nosotros</a>
-                <a href="contacto.html">Contacto</a>
-              </div>
-          
-              <header/>
+    <header class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img class="logo" src="../img/logo.jpeg" alt="Logo de RFS">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto fuentes">
+                  <li class="nav-item">
+                      <a class="nav-link" href="../index.html"> Inicio </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="promociones.html"> Promociones </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="menu.html"> Menu </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre-nosotros.html"> Sobre Nosotros </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html"> Contacto </a>
+              </li>
 
-              <h1>Promociones</h1>
+              </ul>
+          </nav>
+      </div>
+  </header>
+     
 
-              <div class="container">
-                <div class="row">
-                    <div class="col-lg">
-                      <img class="card-img-top" src="../img/menu.jpg" alt="Promo 1">
-                      <div class="card-body">
-                        <h5 class="card-title">Pollo frito</h5>
-                        <p class="card-text">Pollo con salsa BBQ</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                      </div>
+              <h1 class="hero">Promociones</h1>
+
+              <div class="row">
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                        <img src="../img/pollo.jpg" class="card-img-top img-prom" alt="Pollo Frito">
+                        <div class="card-body">
+                            <h3 class="card-title"> Promo #1 </h3>
+                            <p class="card-text"> Pollo y salsa BBQ</p>
+                            <a href="#" class="btn colorBtn"> Comprar </a>
+                        </div>
                     </div>
-                    <div class="col-lg">
-                    <img class="card-img-top" src="../img/menu.jpg" alt="Promo 1">
-                      <div class="card-body">
-                        <h5 class="card-title">Pollo frito</h5>
-                        <p class="card-text">Pollo con salsa BBQ</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                      </div>
+                </div>
+        
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                        <img src="../img/pollo.jpg" class="card-img-top img-prom" alt="Pollo Frito">
+                        <div class="card-body">
+                            <h3 class="card-title"> Promo #2 </h3>
+                            <p class="card-text"> Pollo y salsa BBQ </p>
+                            <a href="#" class="btn colorBtn"> Comprar </a>
+                        </div>
                     </div>
-                    <div class="col-lg">
-                      <img class="card-img-top" src="../img/menu.jpg" alt="Promo 1">
-                      <div class="card-body">
-                        <h5 class="card-title">Pollo frito</h5>
-                        <p class="card-text">Pollo con salsa BBQ</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                      </div>
+                </div>
+        
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                        <img src="../img/pollo.jpg" class="card-img-top img-prom" alt="Pollo Frito">
+                        <div class="card-body">
+                            <h3 class="card-title"> Promo #3 </h3>
+                            <p class="card-text"> Pollo y salsa BBQ </p>
+                            <a href="#" class="btn colorBtn"> Comprar </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                        <img src="../img/pollo.jpg" class="card-img-top img-prom" alt="Pollo Frito">
+                        <div class="card-body">
+                            <h3 class="card-title"> Promo #4 </h3>
+                            <p class="card-text"> Pollo y salsa BBQ </p>
+                            <a href="#" class="btn colorBtn"> Comprar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                        <img src="../img/pollo3.jpg" class="card-img-top img-prom" alt="Pollo Frito">
+                        <div class="card-body">
+                            <h3 class="card-title"> Promo #5 </h3>
+                            <p class="card-text"> Pollo y papas frita </p>
+                            <a href="#" class="btn colorBtn"> Comprar </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                        <img src="../img/pollo3.jpg" class="card-img-top img-prom" alt="Pollo Frito">
+                        <div class="card-body">
+                            <h3 class="card-title"> Promo #6</h3>
+                            <p class="card-text"> Pollo y papas frita</p>
+                            <a href="#" class="btn colorBtn"> Comprar </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                        <img src="../img/pollo3.jpg" class="card-img-top img-prom" alt="Pollo Frito">
+                        <div class="card-body">
+                            <h3 class="card-title"> Promo #7 </h3>
+                            <p class="card-text"> Pollo y papas frita</p>
+                            <a href="#" class="btn colorBtn"> Comprar </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                        <img src="../img/pollo3.jpg" class="card-img-top img-prom" alt="Pollo Frito">
+                        <div class="card-body">
+                            <h3 class="card-title"> Promo #8 </h3>
+                            <p class="card-text"> Pollo y papas fritas </p>
+                            <a href="#" class="btn colorBtn"> Comprar </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <br>
@@ -115,5 +202,7 @@
         </div>
     </footer>	
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js" integrity="sha384-9vc66VQyvE9NO0YbGkR/3nU5/OIO1Bng/8M5O3J5e/bSCps3TAwLb3FgYdzsoeJf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-B4gt1+3u9HNE6M39WX5bxn84ZlI5kGk8C5LlFrj+wYlw0yq4x8ZcW6KLlciqQbl" crossorigin="anonymous"></script>
+    </body>
 </html>
