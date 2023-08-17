@@ -1,0 +1,30 @@
+    /* menu */
+
+      .menus:hover img {
+        transform: scale(1.1, 1.1); }
+      
+      .menu-img {
+        overflow: hidden;
+        height: 80px;
+        width: 80px; }
+        .menu-img  {
+          transition: all .5s ease;
+          height: 100%;
+          object-fit: cover; }
+      
+      
+      
+      .menus {
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px dashed #ccc; }
+        .menus p, .menus h3 {
+          margin-bottom: 0; }
+        .menus .text-wrap {
+          width: calc(100% - 95px);
+          margin-left: 15px; }
+          .menus .text-wrap h4 {
+            font-weight: 300; }
+

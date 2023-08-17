@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid blue;  */
+}
+
+.subheading {
+  color: #f34949;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+h1 h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.logo {
+  width: 7rem;
+  cursor: pointer;
+}
+
+header {
+  background: linear-gradient(to right, #240b36, #c31432);
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: inline-block;
+  position: relative;
+}
+
+.hero-info li {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.inicio-container {
+  display: flex;
+  align-items: center;
+}
+
+.inicio-container_msj {
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+
+.border-right {
+  border-right: 1px solid #dee2e6 !important;
+}
+
+.colorBtn {
+  background-color: #c1101a;
+  color: #fff;
+}
+
+.colorBtn:hover {
+  background-color: #a10000;
+  color: #fff;
+}
+
+.lnr {
+  font-size: 30px;
+  margin-right: 10px;
+  display: block;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+/* testimonio */
+.section-testimonial {
+  background: linear-gradient(to right, #240b36, #c31432);
+}
+
+#testimonial {
+  color: #fff;
+}
+
+.testi-content {
+  text-align: center;
+}
+
+.testi-content .testi-text {
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 30px 60px;
+  font-size: 32px;
+}
+
+.testi-content .testi-author {
+  font-weight: 500;
+}
+
+.testi-content .testi-desc span {
+  color: #f34949;
+  font-weight: bold;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  color: #a10000;
+}
+
+/* Media queries inicio */
+@media (max-width: 575px) {
+  inicio-container-text {
+    font-size: auto;
+  }
+  .carousel-img {
+    height: 200px;
+  }
+  iframe {
+    width: auto;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .carousel-img {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .carousel-img {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .carousel-img {
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .carousel-img {
+    height: 600px;
+  }
+}
+/* Iconos de redes sociales */
+.fa-facebook-f {
+  margin-left: 20px;
+  color: red;
+}
+
+.fa-twitter {
+  color: red;
+}
+
+.fa-instagram {
+  color: red;
+}
+
+.hour {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 450px;
+}
+
+/* menu */
+.menus:hover img {
+  transform: scale(1.1, 1.1);
+}
+
+.menu-img {
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+}
+
+.menu-img {
+  transition: all 0.5s ease;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.menus p, .menus h3 {
+  margin-bottom: 0;
+}
+
+.menus .text-wrap {
+  width: calc(100% - 95px);
+  margin-left: 15px;
+}
+
+.menus .text-wrap h4 {
+  font-weight: 300;
+}/*# sourceMappingURL=style.css.map */
