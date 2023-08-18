@@ -12,30 +12,41 @@
       width: auto;
       height: auto;
     }
+    h4{
+        font-size: 12px;
+    }
   }
   @media only screen and (min-width: 768px) {
     .carousel-img{
       height: 300px;
     }
+    h4{
+        font-size: auto;
+    }
    
   }
   @media only screen and (min-width: 992px) {
     .carousel-img{
-      height: 500px;
+      height: 400px;
+    }
+    h4{
+        font-size: auto;
     }
     
   }
   
   
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1000px) {
   .carousel-img{
-    height: 600px;
+    height: 500px;
   }
+ 
   
   }
   @media only screen and (min-width: 1400px) {
     .carousel-img{
-      height: 600px;
+      height: 500px;
     }
+   
     
     }

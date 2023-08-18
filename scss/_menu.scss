@@ -15,8 +15,7 @@
       
       
       .menus {
-        display: flex;
-        align-items: center;
+       @include flex-row-center;
         padding-bottom: 15px;
         margin-bottom: 15px;
         border-bottom: 1px dashed #ccc; }

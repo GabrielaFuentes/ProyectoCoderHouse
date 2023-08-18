@@ -1,0 +1,15 @@
+.card-img-top{
+    width: 100%;
+    height: 450px;
+  }
+
+  a {
+  
+    &:hover {
+      animation-iteration-count: infinite; // Repetir la animación infinitamente
+      animation-duration: 2s;
+      animation-delay: 1s;
+      animation-timing-function: ease-in;
+    }
+
+  }
