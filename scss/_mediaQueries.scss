@@ -1,13 +1,9 @@
-/* Media queries inicio */
 @media(max-width: 575px){
 
     inicio-container-text{
       font-size: auto;
     }
   
-    .carousel-img{  
-      height: 200px;
-    }
     iframe{
       width: auto;
       height: auto;
@@ -16,37 +12,36 @@
         font-size: 12px;
     }
   }
-  @media only screen and (min-width: 768px) {
-    .carousel-img{
-      height: 300px;
-    }
-    h4{
-        font-size: auto;
-    }
-   
-  }
-  @media only screen and (min-width: 992px) {
-    .carousel-img{
-      height: 400px;
-    }
-    h4{
-        font-size: auto;
-    }
+@media (max-width: 767px) {
     
-  }
-  
-  
-  @media only screen and (min-width: 1000px) {
-  .carousel-img{
-    height: 500px;
-  }
- 
-  
-  }
-  @media only screen and (min-width: 1400px) {
-    .carousel-img{
-      height: 500px;
-    }
    
+  
+  h4{
+    font-size: auto;
+}
+}
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+   
+  
+  h4{
+    font-size: auto;
+}
+.hero {
+    margin-bottom: 20px; 
+  }
+
+  .section-testimonial {
+    margin-top: 20px; 
+  }
+}
+  
+  @media (min-width: 992px) {
+   
+  h4{
+    font-size: auto;
+}
+  }
+
     
-    }
+    

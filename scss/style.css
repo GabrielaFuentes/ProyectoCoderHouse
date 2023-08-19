@@ -36,12 +36,9 @@ header {
 
 .hero {
   width: 100%;
-  height: calc(100vh - 100px);
-  display: inline-block;
   position: relative;
 }
-
-.hero-info li {
+.hero .hero-info li {
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -50,25 +47,14 @@ header {
   display: flex;
   align-items: center;
 }
-
-.inicio-container_msj {
+.inicio-container .inicio-container_msj {
   display: flex;
   text-align: center;
   list-style: none;
 }
 
 .border-right {
-  border-right: 1px solid #dee2e6 !important;
-}
-
-.colorBtn {
-  background-color: #c1101a;
-  color: #fff;
-}
-
-.colorBtn:hover {
-  background-color: #a10000;
-  color: #fff;
+  border-right: 1px solid #dee2e6;
 }
 
 .lnr {
@@ -115,13 +101,9 @@ header {
   color: #a10000;
 }
 
-/* Media queries inicio */
 @media (max-width: 575px) {
   inicio-container-text {
     font-size: auto;
-  }
-  .carousel-img {
-    height: 200px;
   }
   iframe {
     width: auto;
@@ -131,30 +113,25 @@ header {
     font-size: 12px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .carousel-img {
-    height: 300px;
-  }
+@media (max-width: 767px) {
   h4 {
     font-size: auto;
   }
 }
-@media only screen and (min-width: 992px) {
-  .carousel-img {
-    height: 400px;
-  }
+@media (min-width: 768px) and (max-width: 991px) {
   h4 {
     font-size: auto;
   }
-}
-@media only screen and (min-width: 1000px) {
-  .carousel-img {
-    height: 500px;
+  .hero {
+    margin-bottom: 20px;
+  }
+  .section-testimonial {
+    margin-top: 20px;
   }
 }
-@media only screen and (min-width: 1400px) {
-  .carousel-img {
-    height: 500px;
+@media (min-width: 992px) {
+  h4 {
+    font-size: auto;
   }
 }
 /* Iconos de redes sociales */
@@ -222,7 +199,27 @@ a:hover {
   animation-timing-function: ease-in;
 }
 
+.colorBtn {
+  background-color: #c31432;
+  color: #fff;
+}
+
+.colorBtn:hover {
+  background-color: #26a100;
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .hour {
   display: flex;
   justify-content: center;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

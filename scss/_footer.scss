@@ -3,3 +3,6 @@
     justify-content: center;
   }
   
+  .footer-text{
+    @include justify-content;
+  }

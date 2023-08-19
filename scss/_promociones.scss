@@ -13,3 +13,13 @@
     }
 
   }
+
+  .colorBtn {
+    background-color: $color-primario;
+    color: #fff;
+  }
+  
+  .colorBtn:hover {
+    background-color: #26a100;
+    color: #fff;
+  }
