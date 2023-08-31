@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
- .subheading {
-  color: #f34949;
-  font-weight: bold;
-  font-size: 40px; }
-
   @mixin flex-row-center{
 	display:flex;
     align-items: center;
@@ -23,3 +18,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.subheading {
+    color: #f34949;
+    font-weight: bold;
+    font-size: 40px; }
