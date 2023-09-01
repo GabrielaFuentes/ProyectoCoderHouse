@@ -115,11 +115,14 @@ header {
     font-size: 25px;
   }
   .imagen-nosotros {
-    width: 400px;
+    width: 350px;
     height: 500px;
   }
 }
 @media (max-width: 767px) {
+  .imagen-nosotros {
+    width: 280px;
+  }
   h4 {
     font-size: auto;
   }

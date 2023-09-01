@@ -1,8 +1,8 @@
-.hour{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-text{
-    @include justify-content;
-  }
+.hour {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  @include justify-content;
+}
