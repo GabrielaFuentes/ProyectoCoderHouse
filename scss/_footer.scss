@@ -1,6 +1,5 @@
 .hour {
-  display: flex;
-  justify-content: center;
+  @include justify-center
 }
 
 .footer-text {

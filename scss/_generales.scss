@@ -4,22 +4,28 @@
     box-sizing: border-box;
 }
 
-  @mixin flex-row-center{
-	display:flex;
+@mixin flex-row-center {
+    display: flex;
     align-items: center;
 }
 
-@mixin text-align{
-    display:flex;
-     text-align: center;
+@mixin text-align {
+    display: flex;
+    text-align: center;
 }
 
-@mixin justify-content{
+@mixin justify-content {
     display: flex;
     justify-content: space-between;
+}
+
+@mixin justify-center{
+    display: flex;
+    justify-content: center;
 }
 
 .subheading {
     color: #f34949;
     font-weight: bold;
-    font-size: 40px; }
+    font-size: 40px;
+}

@@ -78,7 +78,6 @@ header {
 
 
 .contacto {
-  display: flex;
-  justify-content: center;
+  @include justify-center;
   color: #a10000;
 }

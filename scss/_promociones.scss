@@ -29,7 +29,6 @@ button {
 }
 
 .promo-titulo {
-  display: flex;
-  justify-content: center;
+  @include justify-center;
   margin: 30px 30px;
 }
