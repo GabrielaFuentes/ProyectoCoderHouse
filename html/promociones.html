@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="../scss/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta2/css/all.min.css">
+
 </head>
 
 <body>
@@ -68,8 +69,9 @@
                         <div class="card-body">
                             <h3 class="card-title"> Promo #1 </h3>
                             <p class="card-text"> Papas fritas y Ketchup</p>
-                            <button type="button" class="btn colorBtn animate__animated animate__shakeY">
-                                Comprar</button>
+                            <p class="card-text"> 250$</p>
+                            <button type="button" class="btn colorBtn data-precio=" 250"">
+                                Agregar al Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -80,8 +82,9 @@
                         <div class="card-body">
                             <h3 class="card-title"> Promo #2 </h3>
                             <p class="card-text"> Chicken Wings </p>
-                            <button type="button" class="btn colorBtn animate__animated animate__shakeY">
-                                Comprar</button>
+                            <p class="card-text"> 450$</p>
+                            <button type="button" class="btn colorBtn  " data-precio="450">
+                                Agregar al Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -92,8 +95,9 @@
                         <div class="card-body">
                             <h3 class="card-title"> Promo #3 </h3>
                             <p class="card-text"> Pollo y salsa picante</p>
-                            <button type="button" class="btn colorBtn animate__animated animate__shakeY">
-                                Comprar</button>
+                            <p class="card-text"> 500$</p>
+                            <button type="button" class="btn colorBtn  " data-precio="500">
+                                Agregar al Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -104,8 +108,9 @@
                         <div class="card-body">
                             <h3 class="card-title"> Promo #4 </h3>
                             <p class="card-text"> Pollo y papas fritas </p>
-                            <button type="button" class="btn colorBtn animate__animated animate__shakeY">
-                                Comprar</button>
+                            <p class="card-text"> 550$</p>
+                            <button type="button" class="btn colorBtn  " data-precio="550">
+                                Agregar al Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -118,8 +123,9 @@
                         <div class="card-body">
                             <h3 class="card-title"> Promo #5 </h3>
                             <p class="card-text"> Chicken pops </p>
-                            <button type="button" class="btn colorBtn animate__animated animate__shakeY">
-                                Comprar</button>
+                            <p class="card-text"> 300$</p>
+                            <button type="button" class="btn colorBtn  " data-precio="300">
+                                Agregar al Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -130,8 +136,9 @@
                         <div class="card-body">
                             <h3 class="card-title"> Promo #6</h3>
                             <p class="card-text"> Milanesa de pollo y papas frita</p>
-                            <button type="button" class="btn colorBtn animate__animated animate__shakeY">
-                                Comprar</button>
+                            <p class="card-text"> 320$</p>
+                            <button type="button" class="btn colorBtn  " data-precio="320">
+                                Agregar al Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -142,8 +149,9 @@
                         <div class="card-body">
                             <h3 class="card-title"> Promo #7 </h3>
                             <p class="card-text"> Pollo con salsa BBQ</p>
-                            <button type="button" class="btn colorBtn animate__animated animate__shakeY">
-                                Comprar</button>
+                            <p class="card-text"> 430$</p>
+                            <button type="button" class="btn colorBtn  " data-precio="430">
+                                Agregar al Carrito</button>
                         </div>
                     </div>
                 </div>
@@ -154,14 +162,26 @@
                         <div class="card-body">
                             <h3 class="card-title"> Promo #8 </h3>
                             <p class="card-text"> Nuggest de Pollo</p>
-                            <button type="button" class="btn colorBtn animate__animated animate__shakeY">
-                                Comprar</button>
+                            <p class="card-text"> 200$</p>
+                            <button type="button" class="btn colorBtn" data-precio="200">
+                                Agregar al Carrito</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <ul id="lista-productos" class="list-group">
+                </ul>
+                <h2>Total: $<span id="total-precio">0</span></h2>
+                <button id="comprar-button" class="btn btn-success">Comprar</button>
+            </div>
+        </div>
+    </div>
 
     <br>
 
@@ -212,7 +232,8 @@
                 </div>
 
                 <div class="col-md-12 d-flex align-items-center">
-                    <p class="mx-auto text-center mb-0 copyright">Copyright 2023. Todos los derechos reservados. Diseñado por
+                    <p class="mx-auto text-center mb-0 copyright">Copyright 2023. Todos los derechos reservados.
+                        Diseñado por
                         Maria Fuentes</a></p>
                 </div>
 
@@ -227,6 +248,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
         integrity="sha384-B4gt1+3u9HNE6M39WX5bxn84ZlI5kGk8C5LlFrj+wYlw0yq4x8ZcW6KLlciqQbl"
         crossorigin="anonymous"></script>
+
+    <!-- ---- JavaScript---- -->
+
+    <script src=./promo.js></script>
 </body>
 
 </html>
