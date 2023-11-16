@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "nombre": "Promo #1",
+      "descripcion": "Papas fritas y Ketchup",
+      "precio": 250,
+      "imagen": "../img/menu-1.jpeg"
+    },
+    {
+      "id": 2,
+      "nombre": "Promo #2",
+      "descripcion": "Chicken Wings",
+      "precio": 450,
+      "imagen": "../img/menu-2.jpeg"
+    },
+    {
+      "id": 3,
+      "nombre": "Promo #3",
+      "descripcion": "Pollo y salsa picante",
+      "precio": 500,
+      "imagen": "../img/menu-3.jpeg"
+    },
+    {
+      "id": 4,
+      "nombre": "Promo #4",
+      "descripcion": "Pollo y papas fritas",
+      "precio": 550,
+      "imagen": "../img/menu.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Promo #5",
+      "descripcion": "Chicken pops",
+      "precio": 300,
+      "imagen": "../img/menu-5.jpeg"
+    },
+    {
+      "id": 6,
+      "nombre": "Promo #6",
+      "descripcion": "Milanesa de pollo y papas frita",
+      "precio": 320,
+      "imagen": "../img/menu-6.jpeg"
+    },
+    {
+      "id": 7,
+      "nombre": "Promo #7",
+      "descripcion": "Pollo con salsa BBQ",
+      "precio": 430,
+      "imagen": "../img/menu-7.jpeg"
+    },
+    {
+      "id": 8,
+      "nombre": "Promo #8",
+      "descripcion": "Nuggets de Pollo",
+      "precio": 200,
+      "imagen": "../img/menu-8.jpeg"
+    }
+  ]
+  

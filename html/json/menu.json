@@ -1,0 +1,58 @@
+      [
+      {
+        "nombre": "Combo 1",
+        "precio": 660,
+        "descripcion": "Pollo frito y papas fritas",
+        "imagen": "../img/menu.jpg"
+      },
+      {
+        "nombre": "Combo 2",
+        "precio": 300,
+        "descripcion": "Papas Fritas y Ketchup",
+        "imagen": "../img/menu-1.jpeg"
+      },
+      {
+        "nombre": "Combo 3",
+        "precio": 450,
+        "descripcion": "Chicken Wings",
+        "imagen": "../img/menu-2.jpeg"
+      },
+      {
+        "nombre": "Combo 4",
+        "precio": 700,
+        "descripcion": "Pollo con salsa picante",
+        "imagen": "../img/menu-3.jpeg"
+      },
+      {
+        "nombre": "Combo 5",
+        "precio": 900,
+        "descripcion": "Cubeta de pollo frito",
+        "imagen": "../img/menu-4.jpeg"
+      },
+      {
+        "nombre": "Combo 6",
+        "precio": 350,
+        "descripcion": "Pops de pollo",
+        "imagen": "../img/menu-5.jpeg"
+      },
+      {
+        "nombre": "Combo 7",
+        "precio": 550,
+        "descripcion": "Pollo frito con salsa BBQ",
+        "imagen": "../img/menu-7.jpeg"
+      },
+      {
+        "nombre": "Combo 8",
+        "precio": 400,
+        "descripcion": "Nuggets de pollo",
+        "imagen": "../img/menu-8.jpeg"
+      },
+      {
+        "nombre": "Pollo 3",
+        "precio": 500,
+        "descripcion": "Milanesa de pollo con papas fritas",
+        "imagen": "../img/menu-6.jpeg"
+      }
+    ]
+
+  
