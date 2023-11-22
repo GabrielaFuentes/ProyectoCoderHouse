@@ -1,4 +1,5 @@
-const promocionesContainer = document.getElementById("card-promos");
+let promociones=[];
+console.log('estoy en array',promociones);
 
 fetch("./json/promo.json")
     .then(response => {
@@ -8,7 +9,18 @@ fetch("./json/promo.json")
         return response.json();    
     })
     .then(data => {
-        data.forEach(promo => {
+        promociones = data; 
+        cargarPromos(promociones); 
+        actualizarBotonesAgregar(); 
+    })
+
+    
+const carritoCount = document.querySelector("#carrito-count")
+const promocionesContainer = document.getElementById("card-promos");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+
+        function cargarPromos(){
+            promociones.forEach(promo =>{
             const cardDiv = document.createElement('div');
             cardDiv.classList.add('col-xl-3', 'col-md-6', 'col-sm-12');
             cardDiv.innerHTML = `
@@ -18,83 +30,79 @@ fetch("./json/promo.json")
                         <h3 class="card-title">${promo.nombre}</h3>
                         <p class="card-text">${promo.descripcion}</p>
                         <p class="card-text">$${promo.precio}</p>
-                        <button type="button" class="btn colorBtn" data-precio="${promo.precio}">
-                            Agregar al Carrito
-                        </button>
+                        <button type="button" class="btn colorBtn producto-agregar" id="${promo.id}">Agregar al carrito</button>     
+
                     </div>
                 </div>
             `;
-            promocionesContainer.appendChild(cardDiv);
+            promocionesContainer.append(cardDiv);
+        })
+        actualizarBotonesAgregar(); 
+       
+    }  
+    
+    function actualizarBotonesAgregar() {
+        botonesAgregar = document.querySelectorAll(".producto-agregar");
+        console.log(botonesAgregar);
+    
+        botonesAgregar.forEach(boton => {
+            boton.addEventListener("click", agregarAlCarrito);
         });
-    })
-    .catch(error => {
+    }
+    
+    let productosEnCarrito;
+ 
+    const localProductosEnCarrito = localStorage.getItem("promoEnCarrito");
+    
+    if (localProductosEnCarrito){
+    productosEnCarrito = JSON.parse(localProductosEnCarrito);
+    contarNumero()
+    }else{
+        productosEnCarrito=[]; 
+    }
+    
+    function agregarAlCarrito(e) {
 
-        console.error('Error durante el fetch:', error.message);
-    });
+        Toastify({
+                    text: "Producto agregado",
+                    duration: 3000,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "right", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                      background: "linear-gradient(to right, #4b33a8, #785ce9)",
+                      borderRadius: "2rem",
+                      textTransform: "uppercase",
+                      fontSize: ".75rem"
+                    },
+                    offset: {
+                        x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+                        y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+                      },
+                    onClick: function(){} // Callback after click
+          }).showToast();
 
+        const idBoton = e.currentTarget.id;
+        console.log('idboton',idBoton)
+         const promoCount = promociones.find(promo => promo.id === idBoton);
+         console.log('promocunt',promoCount)
 
+         if(productosEnCarrito.some(promociones => promociones.id === idBoton)) {
+             const index = productosEnCarrito.findIndex(promociones => promociones.id === idBoton);
+            productosEnCarrito[index].cantidad++;
+             } else {
+                promoCount.cantidad = 1;
+              productosEnCarrito.push(promoCount);
+               }
+         console.log('promocunt',productosEnCarrito)
+         contarNumero()
 
+         localStorage.setItem("promoEnCarrito",JSON.stringify(productosEnCarrito));
+    }
 
-        
-        
-        // const listaProductos = document.getElementById("lista-productos");
-        // const totalPrecioElement = document.getElementById("total-precio");
-        // const botonesCarrito = document.querySelectorAll("button[data-precio]");
-        // const comprarButton = document.getElementById("comprar-button");
-
-        // const productosGuardados = JSON.parse(localStorage.getItem("productos")) || [];
-
-
-        // function actualizarListaProductos() {
-        //     listaProductos.innerHTML = "";
-        //     let totalPrecio = 0;
-
-        //     productosGuardados.forEach((precio, index) => {
-        //         totalPrecio += precio;
-        //         const listItem = document.createElement("li");
-        //         listItem.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
-        //         listItem.innerHTML = `<span>Producto ${index + 1}: $${precio}</span>
-        //                              <button class="btn btn-danger eliminar-button" style="cursor: pointer;">Eliminar</button>`;
-                
-        //         listItem.querySelector(".eliminar-button").addEventListener("click", () => {
-        //             productosGuardados.splice(index, 1);
-        //             localStorage.setItem("productos", JSON.stringify(productosGuardados));
-        //             actualizarListaProductos();
-        //         });
-
-        //         listaProductos.appendChild(listItem);
-        //     });
-
-        //     totalPrecioElement.textContent = totalPrecio;
-        // }
-
-        // actualizarListaProductos();
-
-        // botonesCarrito.forEach((boton) => {
-        //     boton.addEventListener("click", () => {
-        //         const precio = parseFloat(boton.getAttribute("data-precio"));
-        //         productosGuardados.push(precio);
-        //         localStorage.setItem("productos", JSON.stringify(productosGuardados));
-        //         actualizarListaProductos();
-        //     });
-        // });
-
-        // comprarButton.addEventListener("click", () => {
-        //     if (productosGuardados.length > 0) {
-        //         alert("¡Compra exitosa! Gracias por su compra.");
-        //         productosGuardados.length = 0;
-        //         localStorage.removeItem("productos");
-        //         actualizarListaProductos();
-        //     } else {
-        //         alert("El carrito de compras está vacío. Agregue productos antes de comprar.");
-        //     }
-        // });
-
-
-
-
-       
-
-        
-       
-           
+    function contarNumero(){
+        let countNumero = productosEnCarrito.reduce((acc, promo)=>
+        acc + promo.cantidad,0);
+        carritoCount.innerText=countNumero;
+    }

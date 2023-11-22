@@ -6,25 +6,22 @@
     <meta name="description" content="No somos KFS, somos RFS el mejor pollo de Uruguay">
     <meta name="keywords" content="HTML, CSS, SASS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promociones</title>
+    <title>Carrito RFS Chicken</title>
 
     <!-- BS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="../scss/style.css" rel="stylesheet" type="text/css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="../scss/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta2/css/all.min.css">
 
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
@@ -57,77 +54,109 @@
                         <a class="nav-link" href="contacto.html"> Contacto </a>
                     </li>
 
+                
+                    <!-- inicio de sesion -->
 
-                           <!-- inicio de sesion -->
-     
-      <button class="btn btn-dark ms-2" id="loginButton">Iniciar Sesión</button>
-      <span id="loginStatus" class="loginStatus"></span>
-    </nav>
-  </div>
-</header>
-<!-- login -->
-<div class="modal" id="loginModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Inicio de Sesión</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-  
-        <form id="loginForm">
-          <div class="mb-3">
-            <label for="username" class="form-label">Usuario:</label>
-            <input type="text" class="form-control" id="username" name="username" required>
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Contraseña:</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-          </div>
-          <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
-          <div class="mb-3">
-            <p class="text-center">¿No tienes una cuenta? <a href="#" id="showRegisterFormLink">Registrarse</a></p>
-          </div>
-        </form>
-        
-<!-- register -->
-       
-        <form id="registerForm" style="display:none;">
-          <h5 class="mt-4">Registro</h5>
-          <div class="mb-3">
-            <label for="newUsername" class="form-label">Nuevo Usuario:</label>
-            <input type="text" class="form-control" id="newUsername" name="newUsername" required>
-          </div>
-          <div class="mb-3">
-            <label for="newPassword" class="form-label">Nueva Contraseña:</label>
-            <input type="password" class="form-control" id="newPassword" name="newPassword" required>
-          </div>
-          <button type="submit" class="btn btn-dark">Registrar</button>
-          <div class="mb-3">
-            <p class="text-center">¿Ya tienes una cuenta? <a href="#" id="showLoginFormLink">Iniciar Sesión</a></p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-                </ul>
+                    <button class="btn btn-dark ms-2" id="loginButton">Iniciar Sesión</button>
+                    <span id="loginStatus" class="loginStatus"></span>
             </nav>
         </div>
     </header>
+    <!-- login -->
+    <div class="modal" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
-    <div>
-        <h1 class="subheading promo-titulo">Promociones</h1>
-        <div id="carrito"></div>
-        <a href="./carrito.html"> <i class="fas fa-shopping-cart carrito-icon boton-menu boton-carrito"></i></a>
-        <span id="carrito-count">0</span>
-    </div>
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
+                        <div class="mb-3">
+                            <p class="text-center">¿No tienes una cuenta? <a href="#"
+                                    id="showRegisterFormLink">Registrarse</a></p>
+                        </div>
+                    </form>
+
+                    <!-- register -->
+
+                    <form id="registerForm" style="display:none;">
+                        <h5 class="mt-4">Registro</h5>
+                        <div class="mb-3">
+                            <label for="newUsername" class="form-label">Nuevo Usuario:</label>
+                            <input type="text" class="form-control" id="newUsername" name="newUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">Nueva Contraseña:</label>
+                            <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Registrar</button>
+                        <div class="mb-3">
+                            <p class="text-center">¿Ya tienes una cuenta? <a href="#" id="showLoginFormLink">Iniciar
+                                    Sesión</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row" id="card-promos"></div>
+
+    </ul>
+    </nav>
+    </div>
+    </header>
+ <aside>
+    <ul>
+        <li>
+            <a class="boton-menu boton-volver" href="./promociones.html">
+                <i class="bi bi-arrow-return-left"></i> Seguir comprando
+            </a>
+        </li>
+        <li>
+            <a class="boton-menu boton-carrito active" href="./carrito.html">
+                <i class="bi bi-cart-fill"></i> Carrito
+            </a>
+        </li>
+    </ul>
+ </aside>
+
+ <main>
+    <h2 class="titulo-principal">Carrito</h2>
+    <div class="contenedor-carrito">
+        <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. </p>
+
+        <div id="carrito-productos" class="carrito-productos disabled">
+            <!-- Esto se va a completar con el JS -->
+        </div>
+
+        <div id="carrito-acciones" class="carrito-acciones disabled">
+            <div class="carrito-acciones-izquierda">
+                <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+            </div>
+            <div class="carrito-acciones-derecha">
+                <div class="carrito-acciones-total">
+                    <p>Total:</p>
+                    <p id="total">$</p>
+                </div>
+                <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+            </div>
+        </div>
+
+        <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+
+    </div>
+</main>
 
         <!-- FOOTER -->
 
@@ -185,17 +214,19 @@
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"
             integrity="sha384-9vc66VQyvE9NO0YbGkR/3nU5/OIO1Bng/8M5O3J5e/bSCps3TAwLb3FgYdzsoeJf"
             crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-B4gt1+3u9HNE6M39WX5bxn84ZlI5kGk8C5LlFrj+wYlw0yq4x8ZcW6KLlciqQbl"
+            crossorigin="anonymous"></script>
 
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!-- ---- JavaScript---- -->
-        <script src=./inicio.js></script>
-        <script src=./promo.js></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src=./carrito.js></script>
+        <script src=./promo.js></script>
+       
 </body>
 
 </html>

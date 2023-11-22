@@ -30,16 +30,26 @@ document.addEventListener("DOMContentLoaded", function () {
     function setRegisteredStatus(isRegistered) {
       localStorage.setItem("registered", isRegistered ? "true" : "false");
     }
+
+    function checkLoginStatus() {
+        if (isLoggedIn()) {
+            const storedUsername = localStorage.getItem("username");
+            loginButton.innerText = "Cerrar Sesión";
+            loginStatus.innerText = "Hola, " + storedUsername + "!";
+        }
+    }
+
+    checkLoginStatus(); 
   
     loginButton.addEventListener("click", function () {
-        if (loginButton.innerText === "Iniciar Sesión") {
-          showLoginForm();
-          loginModal.show();
-        } else {
+        if(isLoggedIn()) {
           loginButton.innerText = "Iniciar Sesión";
           loginStatus.innerText = "";
           setLoggedInStatus(false);
           setRegisteredStatus(false);
+        } else{
+            showLoginForm();
+            loginModal.show();
         }
       });
   
@@ -83,9 +93,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const newPassword = registerForm.elements["newPassword"].value;
       localStorage.setItem("username", newUsername);
       localStorage.setItem("password", newPassword);
-      Swal.fire({title:"Usuario registrado exitosamente",
-      color:"white",
-                background:"black"});
+      Swal.fire({
+    title:"Usuario registrado exitosamente",
+    color:"white",
+     background:"black"});
       showLoginForm();
       setRegisteredStatus(true);
       setLoggedInStatus(true);

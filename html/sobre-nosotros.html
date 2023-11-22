@@ -49,6 +49,60 @@
           <li class="nav-item">
             <a class="nav-link" href="contacto.html"> Contacto </a>
           </li>
+           <!-- inicio de sesion -->
+     
+      <button class="btn btn-dark ms-2" id="loginButton">Iniciar Sesión</button>
+      <span id="loginStatus" class="loginStatus"></span>
+    </nav>
+  </div>
+</header>
+<!-- login -->
+<div class="modal" id="loginModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Inicio de Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+  
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="username" class="form-label">Usuario:</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Contraseña:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
+          <div class="mb-3">
+            <p class="text-center">¿No tienes una cuenta? <a href="#" id="showRegisterFormLink">Registrarse</a></p>
+          </div>
+        </form>
+        
+<!-- register -->
+       
+        <form id="registerForm" style="display:none;">
+          <h5 class="mt-4">Registro</h5>
+          <div class="mb-3">
+            <label for="newUsername" class="form-label">Nuevo Usuario:</label>
+            <input type="text" class="form-control" id="newUsername" name="newUsername" required>
+          </div>
+          <div class="mb-3">
+            <label for="newPassword" class="form-label">Nueva Contraseña:</label>
+            <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+          </div>
+          <button type="submit" class="btn btn-dark">Registrar</button>
+          <div class="mb-3">
+            <p class="text-center">¿Ya tienes una cuenta? <a href="#" id="showLoginFormLink">Iniciar Sesión</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         </ul>
       </nav>
@@ -181,6 +235,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-B4gt1+3u9HNE6M39WX5bxn84ZlI5kGk8C5LlFrj+wYlw0yq4x8ZcW6KLlciqQbl" crossorigin="anonymous"></script>
-</body>
+    <script src=./inicio.js></script>
+  </body>
 
 </html>
