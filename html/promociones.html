@@ -9,7 +9,8 @@
     <title>Promociones</title>
 
     <!-- BS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="../scss/style.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
@@ -58,72 +59,75 @@
                     </li>
 
 
-                           <!-- inicio de sesion -->
-     
-      <button class="btn btn-dark ms-2" id="loginButton">Iniciar Sesión</button>
-      <span id="loginStatus" class="loginStatus"></span>
-    </nav>
-  </div>
-</header>
-<!-- login -->
-<div class="modal" id="loginModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Inicio de Sesión</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-  
-        <form id="loginForm">
-          <div class="mb-3">
-            <label for="username" class="form-label">Usuario:</label>
-            <input type="text" class="form-control" id="username" name="username" required>
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Contraseña:</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-          </div>
-          <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
-          <div class="mb-3">
-            <p class="text-center">¿No tienes una cuenta? <a href="#" id="showRegisterFormLink">Registrarse</a></p>
-          </div>
-        </form>
-        
-<!-- register -->
-       
-        <form id="registerForm" style="display:none;">
-          <h5 class="mt-4">Registro</h5>
-          <div class="mb-3">
-            <label for="newUsername" class="form-label">Nuevo Usuario:</label>
-            <input type="text" class="form-control" id="newUsername" name="newUsername" required>
-          </div>
-          <div class="mb-3">
-            <label for="newPassword" class="form-label">Nueva Contraseña:</label>
-            <input type="password" class="form-control" id="newPassword" name="newPassword" required>
-          </div>
-          <button type="submit" class="btn btn-dark">Registrar</button>
-          <div class="mb-3">
-            <p class="text-center">¿Ya tienes una cuenta? <a href="#" id="showLoginFormLink">Iniciar Sesión</a></p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+                    <!-- inicio de sesion -->
 
-
-                </ul>
+                    <button class="btn btn-dark ms-2" id="loginButton">Iniciar Sesión</button>
+                    <span id="loginStatus" class="loginStatus"></span>
             </nav>
         </div>
     </header>
+    <!-- login -->
+    <div class="modal" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
-    <div>
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
+                        <div class="mb-3">
+                            <p class="text-center">¿No tienes una cuenta? <a href="#"
+                                    id="showRegisterFormLink">Registrarse</a></p>
+                        </div>
+                    </form>
+
+                    <!-- register -->
+
+                    <form id="registerForm" style="display:none;">
+                        <h5 class="mt-4">Registro</h5>
+                        <div class="mb-3">
+                            <label for="newUsername" class="form-label">Nuevo Usuario:</label>
+                            <input type="text" class="form-control" id="newUsername" name="newUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">Nueva Contraseña:</label>
+                            <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Registrar</button>
+                        <div class="mb-3">
+                            <p class="text-center">¿Ya tienes una cuenta? <a href="#" id="showLoginFormLink">Iniciar
+                                    Sesión</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </ul>
+    </nav>
+    </div>
+    </header>
+
+    <div class="promo-header">
         <h1 class="subheading promo-titulo">Promociones</h1>
         <div id="carrito"></div>
         <a href="./carrito.html"> <i class="fas fa-shopping-cart carrito-icon boton-menu boton-carrito"></i></a>
         <span id="carrito-count">0</span>
     </div>
+
     </div>
 
     <div class="container-fluid">
@@ -185,13 +189,15 @@
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"
             integrity="sha384-9vc66VQyvE9NO0YbGkR/3nU5/OIO1Bng/8M5O3J5e/bSCps3TAwLb3FgYdzsoeJf"
             crossorigin="anonymous"></script>
 
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!-- ---- JavaScript---- -->
         <script src=./inicio.js></script>
         <script src=./promo.js></script>

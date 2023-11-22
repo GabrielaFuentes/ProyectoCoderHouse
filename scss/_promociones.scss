@@ -10,7 +10,7 @@
 button {
 
   &:hover {
-    animation-iteration-count: infinite; // Repetir la animación infinitamente
+    animation-iteration-count: infinite;
     animation-duration: 2s;
     animation-delay: 1s;
     animation-timing-function: ease-in;
@@ -36,4 +36,11 @@ button {
 .carrito-icon {
   margin: 10px;
   cursor: pointer;
+  color: red;
+  font-size: 2rem;
+}
+
+#carrito-count {
+  font-weight: bold;
+
 }

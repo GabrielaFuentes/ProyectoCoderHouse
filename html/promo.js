@@ -1,29 +1,29 @@
-let promociones=[];
-console.log('estoy en array',promociones);
+let promociones = [];
+
 
 fetch("./json/promo.json")
     .then(response => {
         if (!response.ok) {
             throw new Error(`Error al cargar el archivo JSON: ${response.status}`);
         }
-        return response.json();    
+        return response.json();
     })
     .then(data => {
-        promociones = data; 
-        cargarPromos(promociones); 
-        actualizarBotonesAgregar(); 
+        promociones = data;
+        cargarPromos(promociones);
+        actualizarBotonesAgregar();
     })
 
-    
+
 const carritoCount = document.querySelector("#carrito-count")
 const promocionesContainer = document.getElementById("card-promos");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 
-        function cargarPromos(){
-            promociones.forEach(promo =>{
-            const cardDiv = document.createElement('div');
-            cardDiv.classList.add('col-xl-3', 'col-md-6', 'col-sm-12');
-            cardDiv.innerHTML = `
+function cargarPromos() {
+    promociones.forEach(promo => {
+        const cardDiv = document.createElement('div');
+        cardDiv.classList.add('col-xl-3', 'col-md-6', 'col-sm-12');
+        cardDiv.innerHTML = `
                 <div class="card text-center">
                     <img src="${promo.imagen}" class="card-img-top img-prom" alt="${promo.nombre}">
                     <div class="card-body">
@@ -35,74 +35,76 @@ let botonesAgregar = document.querySelectorAll(".producto-agregar");
                     </div>
                 </div>
             `;
-            promocionesContainer.append(cardDiv);
-        })
-        actualizarBotonesAgregar(); 
-       
-    }  
-    
-    function actualizarBotonesAgregar() {
-        botonesAgregar = document.querySelectorAll(".producto-agregar");
-        console.log(botonesAgregar);
-    
-        botonesAgregar.forEach(boton => {
-            boton.addEventListener("click", agregarAlCarrito);
-        });
-    }
-    
-    let productosEnCarrito;
- 
-    const localProductosEnCarrito = localStorage.getItem("promoEnCarrito");
-    
-    if (localProductosEnCarrito){
+        promocionesContainer.append(cardDiv);
+    })
+    actualizarBotonesAgregar();
+
+}
+
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".producto-agregar");
+
+
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
+}
+
+let productosEnCarrito;
+
+const localProductosEnCarrito = localStorage.getItem("promoEnCarrito");
+
+if (localProductosEnCarrito) {
     productosEnCarrito = JSON.parse(localProductosEnCarrito);
     contarNumero()
-    }else{
-        productosEnCarrito=[]; 
-    }
-    
-    function agregarAlCarrito(e) {
+} else {
+    productosEnCarrito = [];
+}
 
-        Toastify({
-                    text: "Producto agregado",
-                    duration: 3000,
-                    close: true,
-                    gravity: "top", // `top` or `bottom`
-                    position: "right", // `left`, `center` or `right`
-                    stopOnFocus: true, // Prevents dismissing of toast on hover
-                    style: {
-                      background: "linear-gradient(to right, #4b33a8, #785ce9)",
-                      borderRadius: "2rem",
-                      textTransform: "uppercase",
-                      fontSize: ".75rem"
-                    },
-                    offset: {
-                        x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-                        y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
-                      },
-                    onClick: function(){} // Callback after click
-          }).showToast();
+function agregarAlCarrito(e) {
 
-        const idBoton = e.currentTarget.id;
-        console.log('idboton',idBoton)
-         const promoCount = promociones.find(promo => promo.id === idBoton);
-         console.log('promocunt',promoCount)
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #4b33a8, #785ce9)",
+            borderRadius: "2rem",
+            textTransform: "uppercase",
+            fontSize: ".75rem",
+            color: "white",
+            background: "black"
+        },
+        offset: {
+            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+        },
+        onClick: function () { } // Callback after click
+    }).showToast();
 
-         if(productosEnCarrito.some(promociones => promociones.id === idBoton)) {
-             const index = productosEnCarrito.findIndex(promociones => promociones.id === idBoton);
-            productosEnCarrito[index].cantidad++;
-             } else {
-                promoCount.cantidad = 1;
-              productosEnCarrito.push(promoCount);
-               }
-         console.log('promocunt',productosEnCarrito)
-         contarNumero()
+    const idBoton = e.currentTarget.id;
 
-         localStorage.setItem("promoEnCarrito",JSON.stringify(productosEnCarrito));
+    const promoCount = promociones.find(promo => promo.id === idBoton);
+
+
+    if (productosEnCarrito.some(promociones => promociones.id === idBoton)) {
+        const index = productosEnCarrito.findIndex(promociones => promociones.id === idBoton);
+        productosEnCarrito[index].cantidad++;
+    } else {
+        promoCount.cantidad = 1;
+        productosEnCarrito.push(promoCount);
     }
 
-    function contarNumero(){
-        let countNumero = productosEnCarrito.reduce((acc, promo)=>
-        acc + promo.cantidad,0);
-        carritoCount.innerText=countNumero;
-    }
+    contarNumero()
+
+    localStorage.setItem("promoEnCarrito", JSON.stringify(productosEnCarrito));
+}
+
+function contarNumero() {
+    let countNumero = productosEnCarrito.reduce((acc, promo) =>
+        acc + promo.cantidad, 0);
+    carritoCount.innerText = countNumero;
+}

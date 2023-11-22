@@ -77,10 +77,10 @@ function eliminarDelCarrito(e) {
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(promo => promo.id === idBoton);
 
-    
-        productosEnCarrito.splice(index, 1);
-        cargarPromoCarrito();
-        localStorage.setItem("promoEnCarrito", JSON.stringify(productosEnCarrito));
+
+    productosEnCarrito.splice(index, 1);
+    cargarPromoCarrito();
+    localStorage.setItem("promoEnCarrito", JSON.stringify(productosEnCarrito));
 }
 
 botonVaciar.addEventListener("click", vaciarCarrito);
@@ -93,7 +93,9 @@ function vaciarCarrito() {
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText: 'Sí',
-        cancelButtonText: 'No'
+        cancelButtonText: 'No',
+        color: "white",
+      background: "black"
     }).then((result) => {
         if (result.isConfirmed) {
             productosEnCarrito.length = 0;
@@ -120,5 +122,5 @@ function comprarCarrito() {
     contenedorCarritoComprado.classList.remove("disabled");
 }
 
-// Llamar a la función para cargar el carrito al cargar la página
+
 cargarPromoCarrito();

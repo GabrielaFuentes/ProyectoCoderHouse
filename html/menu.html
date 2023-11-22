@@ -10,16 +10,16 @@
 
     <!-- BS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-<script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
-<link href="../scss/style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+    <link href="../scss/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta2/css/all.min.css">
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -54,64 +54,66 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html"> Contacto </a>
                     </li>
-                     <!-- inicio de sesion -->
-     
-      <button class="btn btn-dark ms-2" id="loginButton">Iniciar Sesión</button>
-      <span id="loginStatus" class="loginStatus"></span>
-    </nav>
-  </div>
-</header>
-<!-- login -->
-<div class="modal" id="loginModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Inicio de Sesión</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-  
-        <form id="loginForm">
-          <div class="mb-3">
-            <label for="username" class="form-label">Usuario:</label>
-            <input type="text" class="form-control" id="username" name="username" required>
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Contraseña:</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-          </div>
-          <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
-          <div class="mb-3">
-            <p class="text-center">¿No tienes una cuenta? <a href="#" id="showRegisterFormLink">Registrarse</a></p>
-          </div>
-        </form>
-        
-<!-- register -->
-       
-        <form id="registerForm" style="display:none;">
-          <h5 class="mt-4">Registro</h5>
-          <div class="mb-3">
-            <label for="newUsername" class="form-label">Nuevo Usuario:</label>
-            <input type="text" class="form-control" id="newUsername" name="newUsername" required>
-          </div>
-          <div class="mb-3">
-            <label for="newPassword" class="form-label">Nueva Contraseña:</label>
-            <input type="password" class="form-control" id="newPassword" name="newPassword" required>
-          </div>
-          <button type="submit" class="btn btn-dark">Registrar</button>
-          <div class="mb-3">
-            <p class="text-center">¿Ya tienes una cuenta? <a href="#" id="showLoginFormLink">Iniciar Sesión</a></p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+                    <!-- inicio de sesion -->
 
-
-                </ul>
+                    <button class="btn btn-dark ms-2" id="loginButton">Iniciar Sesión</button>
+                    <span id="loginStatus" class="loginStatus"></span>
             </nav>
         </div>
+    </header>
+    <!-- login -->
+    <div class="modal" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
+                        <div class="mb-3">
+                            <p class="text-center">¿No tienes una cuenta? <a href="#"
+                                    id="showRegisterFormLink">Registrarse</a></p>
+                        </div>
+                    </form>
+
+                    <!-- register -->
+
+                    <form id="registerForm" style="display:none;">
+                        <h5 class="mt-4">Registro</h5>
+                        <div class="mb-3">
+                            <label for="newUsername" class="form-label">Nuevo Usuario:</label>
+                            <input type="text" class="form-control" id="newUsername" name="newUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">Nueva Contraseña:</label>
+                            <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Registrar</button>
+                        <div class="mb-3">
+                            <p class="text-center">¿Ya tienes una cuenta? <a href="#" id="showLoginFormLink">Iniciar
+                                    Sesión</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </ul>
+    </nav>
+    </div>
     </header>
 
     <section id="gtco-menu" class="section-padding">
@@ -133,7 +135,7 @@
     </section>
     <br>
     <!-- FOOTER -->
-  
+
 
     <footer class="mastfoot pb-5 bg-white section-padding pb-0">
         <h1 class="contacto">Contacto</h1>
@@ -184,7 +186,8 @@
                 </div>
 
                 <div class="col-md-12 d-flex align-items-center">
-                    <p class="mx-auto text-center mb-0 copyright">Copyright 2023. Todos los derechos reservados. Diseñado por
+                    <p class="mx-auto text-center mb-0 copyright">Copyright 2023. Todos los derechos reservados.
+                        Diseñado por
                         Maria Fuentes</a></p>
                 </div>
 
@@ -198,8 +201,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
         integrity="sha384-B4gt1+3u9HNE6M39WX5bxn84ZlI5kGk8C5LlFrj+wYlw0yq4x8ZcW6KLlciqQbl"
         crossorigin="anonymous"></script>
-        <script src=./inicio.js></script>
-        <script src=./menu.js></script>
+    <script src=./inicio.js></script>
+    <script src=./menu.js></script>
 </body>
 
 </html>

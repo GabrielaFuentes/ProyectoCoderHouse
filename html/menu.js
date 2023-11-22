@@ -1,17 +1,17 @@
 const menuContainer = document.getElementById("card-menu");
- fetch("./json/menu.json")
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Error al cargar el archivo JSON: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                
-                data.forEach(combo => {
-                    const comboDiv = document.createElement('div');
-                    comboDiv.classList.add('menus');
-                    comboDiv.innerHTML = `
+fetch("./json/menu.json")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Error al cargar el archivo JSON: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+
+        data.forEach(combo => {
+            const comboDiv = document.createElement('div');
+            comboDiv.classList.add('menus');
+            comboDiv.innerHTML = `
                         <div class="menu-img rounded-circle">
                             <img class="img-fluid" src="${combo.imagen}" alt="${combo.nombre}">
                         </div>
@@ -27,11 +27,11 @@ const menuContainer = document.getElementById("card-menu");
                             <p>${combo.descripcion}</p>
                         </div>
                     `;
-                    menuContainer.appendChild(comboDiv);
-                });
-            })
-            .catch(error => {
-                console.error('Error durante el fetch:', error.message);
-            });
+            menuContainer.appendChild(comboDiv);
+        });
+    })
+    .catch(error => {
+        console.error('Error durante el fetch:', error.message);
+    });
 
 
