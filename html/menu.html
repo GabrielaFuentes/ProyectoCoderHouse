@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
     <link href="../scss/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0-beta2/css/all.min.css">
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -51,9 +51,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="sobre-nosotros.html"> Sobre Nosotros </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html"> Contacto </a>
-                    </li>
+                   
                     <!-- inicio de sesion -->
 
                     <button class="btn btn-dark ms-2" id="loginButton">Iniciar Sesión</button>
@@ -134,73 +132,85 @@
         </div>
     </section>
     <br>
-    <!-- FOOTER -->
 
+  <!-- FOOTER -->
 
-    <footer class="mastfoot pb-5 bg-white section-padding pb-0">
-        <h1 class="contacto">Contacto</h1>
-        <div class="inner container">
-            <div class="row">
-                <div class="col">
-                    <div class="footer-widget pr-lg-5 pr-0">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.9584536525795!2d-56.188236624009114!3d-34.882389572269204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8015c92408bb%3A0xf2fdd779c38c82f1!2sPando%20%26%20Blandengues%2C%2011800%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1692065387702!5m2!1ses-419!2suy"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+  <footer class="mastfoot pb-5 bg-white section-padding pb-0">
+    <h1 class="contacto">Contacto</h1>
+    <div class="inner container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-widget pr-lg-5 pr-0">
+            <h2>Suscribete y recibe promociones especiales</h2>
 
-                </div>
-                <div class="col">
-                    <div class="footer-widget px-lg-5 px-0">
-                        <h4 class="hour">Horario</h4>
-                        <ul class="list-unstyled open-hours">
-                            <li class="footer-text"><span>Domingo</span><span>11:00 - 23:00</span></li>
-                            <li class="footer-text"><span>Lunes</span><span>11:00 - 23:00</span></li>
-                            <li class="footer-text"><span>Martes</span><span>11:00 - 23:00</span></li>
-                            <li class="footer-text"><span>Miercoles</span><span>11:00 - 23:00</span></li>
-                            <li class="footer-text"><span>Jueves</span><span>11:00 - 23:00</span></li>
-                            <li class="footer-text"><span>Viernes</span><span>11:00 - 23:00</span></li>
-                            <li class="footer-text"><span>Sabado</span><span> Cerrado</span></li>
-                        </ul>
-                    </div>
+            <form>
+              <div>
+                <label for="nombre"> Nombre </label>
+                <input type="'text" id="nombre" class="form-control" placeholder="Nombre">
+              </div>
 
+              <div>
+                <label for="apellido"> Apellido </label>
+                <input type="'text" id="apellido" class="form-control" placeholder="Apellido">
+              </div>
+              <div>
+                <label for="email"> Email </label>
+                <input type="email" id="email" class="form-control" placeholder="Email">
+              </div>
+              <div>
+                <label for="telefono"> Teléfono</label>
+                <input type="tel" id="telefono" class="form-control" placeholder="Teléfono">
+              </div>
 
-
-                    <ul>
-                        <li class="footer-text"><span>Aguada, Montevideo</span></li>
-                        <li class="footer-text"><span>Telefono: +59897471142</span></li>
-
-                    </ul>
-
-                    <nav class="nav nav-mastfoot justify-content-start">
-                        <a class="nav-link" href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="nav-link" href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="nav-link" href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </nav>
-                </div>
-
-                <div class="col-md-12 d-flex align-items-center">
-                    <p class="mx-auto text-center mb-0 copyright">Copyright 2023. Todos los derechos reservados.
-                        Diseñado por
-                        Maria Fuentes</a></p>
-                </div>
-
-            </div>
+              <br>
+              <input type="submit" class="btn btn-danger">
+              <input type="reset" class="btn btn-danger">
+            </form>
+          </div>
         </div>
-    </footer>
+        <div class="col-md-6">
+          <div class="footer-widget px-lg-5 px-0">
+            <h4 class="hour">Horario</h4>
+            <ul class="list-unstyled open-hours">
+              <li class="footer-text"><span>Domingo</span><span>11:00 - 23:00</span></li>
+              <li class="footer-text"><span>Lunes</span><span>11:00 - 23:00</span></li>
+              <li class="footer-text"><span>Martes</span><span>11:00 - 23:00</span></li>
+              <li class="footer-text"><span>Miercoles</span><span>11:00 - 23:00</span></li>
+              <li class="footer-text"><span>Jueves</span><span>11:00 - 23:00</span></li>
+              <li class="footer-text"><span>Viernes</span><span>11:00 - 23:00</span></li>
+              <li class="footer-text"><span>Sabado</span><span> Cerrado</span></li>
+            </ul>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"
-        integrity="sha384-9vc66VQyvE9NO0YbGkR/3nU5/OIO1Bng/8M5O3J5e/bSCps3TAwLb3FgYdzsoeJf"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-        integrity="sha384-B4gt1+3u9HNE6M39WX5bxn84ZlI5kGk8C5LlFrj+wYlw0yq4x8ZcW6KLlciqQbl"
-        crossorigin="anonymous"></script>
+            <nav class="nav nav-mastfoot justify-content-end">
+              <a class="nav-link" href="#">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="col-md-12 d-flex align-items-center">
+          <p class="mx-auto text-center mb-0 copyright">Copyright 2023. Todos los derechos reservados.
+            Diseñado por Maria Fuentes</a></p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+        
+        
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"></script>
     <script src=./inicio.js></script>
     <script src=./menu.js></script>
 </body>

@@ -10,10 +10,11 @@
 
   <!-- BS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link href="../scss/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -46,9 +47,7 @@
           <li class="nav-item">
             <a class="nav-link active" href="sobre-nosotros.html"> Sobre Nosotros </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html"> Contacto </a>
-          </li>
+         
            <!-- inicio de sesion -->
      
       <button class="btn btn-dark ms-2" id="loginButton">Iniciar Sesión</button>
@@ -128,27 +127,28 @@
               </h2>
             </div>
             <div class="sobre-nosotros-text"> 
-              <p>
+              <p class="col-sm-12" >
 
                 En RFS Chichen, nuestra pasión por el sabor auténtico y la calidez de la comida casera nos ha llevado a
                 crear un espacio donde los sabores tradicionales y la hospitalidad se fusionan. Somos un restaurante
                 familiar que se enorgullece de servir una deliciosa variedad de platos de pollo frito, elaborados con
                 amor y cuidado, tal como lo haría nuestra propia abuela.
+                </p>
 
-                Nuestra historia comenzó en un modesto rincón de la cocina, donde las recetas secretas se transmitieron
+               <p class="col-sm-12" > Nuestra historia comenzó en un modesto rincón de la cocina, donde las recetas secretas se transmitieron
                 de generación en generación. Cada bocado de nuestro pollo frito lleva consigo el sabor de la tradición,
-                la dedicación y la alegría de compartir momentos especiales alrededor de la mesa.
+                la dedicación y la alegría de compartir momentos especiales alrededor de la mesa.</p>
 
-                Lo que hace que nuestro pollo frito sea único es la combinación de ingredientes frescos, condimentos
+                <p class="col-sm-12" > Lo que hace que nuestro pollo frito sea único es la combinación de ingredientes frescos, condimentos
                 seleccionados a mano y un proceso de preparación meticuloso. Desde el crujiente y dorado pollo clásico
                 hasta las innovadoras creaciones que se deslizan entre lo picante y lo agridulce, cada plato está
-                diseñado para satisfacer los deseos de todos los paladares.
+                diseñado para satisfacer los deseos de todos los paladares. </p>
 
-                Valoramos a cada miembro de nuestra comunidad, y es por eso que trabajamos arduamente para brindarte lo
+                <p class="col-sm-12" >  Valoramos a cada miembro de nuestra comunidad, y es por eso que trabajamos arduamente para brindarte lo
                 mejor. Nuestro equipo está formado por individuos apasionados que comparten un amor por la cocina y un
-                deseo genuino de brindarte una experiencia excepcional. Tu satisfacción es nuestra recompensa.
+                deseo genuino de brindarte una experiencia excepcional. Tu satisfacción es nuestra recompensa. </p>
 
-                Así que, si eres un amante del pollo frito en todas sus formas, te invitamos a unirte a nosotros en RFS
+                <p class="col-sm-12" >  Así que, si eres un amante del pollo frito en todas sus formas, te invitamos a unirte a nosotros en RFS
                 Chicken. Aquí, la comida es más que un plato en el menú; es una expresión de cariño, tradición y unión.
                 Ven y disfruta de la calidez de nuestra mesa y la delicia de nuestros platos. Te damos la bienvenida a
                 nuestra familia de amantes del pollo frito.
@@ -168,7 +168,6 @@
   </section>
   <br>
 
-  <!-- FOOTER -->
 
   <!-- FOOTER -->
 
@@ -176,16 +175,36 @@
     <h1 class="contacto">Contacto</h1>
     <div class="inner container">
       <div class="row">
-        <div class="col">
+        <div class="col-md-6">
           <div class="footer-widget pr-lg-5 pr-0">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.9584536525795!2d-56.188236624009114!3d-34.882389572269204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8015c92408bb%3A0xf2fdd779c38c82f1!2sPando%20%26%20Blandengues%2C%2011800%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1692065387702!5m2!1ses-419!2suy"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+            <h2>Suscribete y recibe promociones especiales</h2>
 
+            <form>
+              <div>
+                <label for="nombre"> Nombre </label>
+                <input type="'text" id="nombre" class="form-control" placeholder="Nombre">
+              </div>
+
+              <div>
+                <label for="apellido"> Apellido </label>
+                <input type="'text" id="apellido" class="form-control" placeholder="Apellido">
+              </div>
+              <div>
+                <label for="email"> Email </label>
+                <input type="email" id="email" class="form-control" placeholder="Email">
+              </div>
+              <div>
+                <label for="telefono"> Teléfono</label>
+                <input type="tel" id="telefono" class="form-control" placeholder="Teléfono">
+              </div>
+
+              <br>
+              <input type="submit" class="btn btn-danger">
+              <input type="reset" class="btn btn-danger">
+            </form>
+          </div>
         </div>
-        <div class="col">
+        <div class="col-md-6">
           <div class="footer-widget px-lg-5 px-0">
             <h4 class="hour">Horario</h4>
             <ul class="list-unstyled open-hours">
@@ -197,44 +216,37 @@
               <li class="footer-text"><span>Viernes</span><span>11:00 - 23:00</span></li>
               <li class="footer-text"><span>Sabado</span><span> Cerrado</span></li>
             </ul>
+
+            <nav class="nav nav-mastfoot justify-content-end">
+              <a class="nav-link" href="#">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </nav>
           </div>
-
-
-
-          <ul>
-            <li class="footer-text"><span>Aguada, Montevideo</span></li>
-            <li class="footer-text"><span>Telefono: +59897471142</span></li>
-
-          </ul>
-
-          <nav class="nav nav-mastfoot justify-content-start">
-            <a class="nav-link" href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a class="nav-link" href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a class="nav-link" href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </nav>
         </div>
 
         <div class="col-md-12 d-flex align-items-center">
-          <p class="mx-auto text-center mb-0 copyright">Copyright 2023. Todos los derechos reservados. Diseñado por Maria
-            Fuentes</a></p>
+          <p class="mx-auto text-center mb-0 copyright">Copyright 2023. Todos los derechos reservados.
+            Diseñado por Maria Fuentes</a></p>
         </div>
 
       </div>
     </div>
   </footer>
+      
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"
-    integrity="sha384-9vc66VQyvE9NO0YbGkR/3nU5/OIO1Bng/8M5O3J5e/bSCps3TAwLb3FgYdzsoeJf"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-    integrity="sha384-B4gt1+3u9HNE6M39WX5bxn84ZlI5kGk8C5LlFrj+wYlw0yq4x8ZcW6KLlciqQbl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"></script>
     <script src=./inicio.js></script>
   </body>
 
